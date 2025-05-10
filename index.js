@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Add this middleware to serve static files
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Middleware
 app.use(express.json());
 
