@@ -1,8 +1,10 @@
 {
   "scripts": {
-"start": "node index.js"
-},
+    "start": "node index.js"
+  },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.2"
   }
 }
